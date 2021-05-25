@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+:root {
+	/* Primary */
+	--outer-space: #1a2e32;
+	--hunter-green: #29512f;
+	--cinnabar: #e74d3c;
+	/* Neutral */
+	--silver-metallic: #b2b5bd;
+	--pale-silver: #c9c5ba;
+	--morning-blue: #96b0a5;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -10,18 +21,17 @@ body {
 	padding: 0;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
-	color: #b1b4bd;
-	/* background-color: #323a45; */
+	color: var(--silver-metallic);
 }
 
 .nav-link {
-	color: #b1b4bd;
+	color: var(--silver-metallic);
 	font-weight: 500;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-	color: #e74c3c;
+	color: var(--cinnabar);
 }
 
 .header-background {
@@ -31,7 +41,6 @@ body {
 	top: 0;
 	height: auto;
 	min-height: 750px;
-	margin-bottom: 50px;
 	padding-bottom: 70px;
 	background-image: -webkit-gradient(
 		linear,
@@ -88,7 +97,7 @@ body {
 
 .navbar-brand:hover {
 	cursor: default;
-	color: #e74c3c;
+	color: var(--cinnabar);
 }
 
 .navbar-toggler {
@@ -115,25 +124,26 @@ body {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-	padding: 1.4rem 1rem;
+	padding: 0.8rem 1rem 1rem 0;
 	font-size: 1.2rem;
 	position: relative;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
-	color: #e74c3c;
+	color: var(--cinnabar);
 }
 
 .btn {
-	background-color: #e74c3c;
+	background-color: var(--cinnabar);
 	color: #fff;
+	border: none;
 	border-radius: 10px;
 	padding: 0.5rem 1rem;
 	font-size: 1.2rem;
 }
 
 .btn:hover {
-	background-color: #0a3d62;
+	background-color: var(--outer-space);
 	color: #fff;
 }
 
@@ -145,6 +155,85 @@ body {
 	text-align: center;
 	color: #fff;
 	margin-top: 180px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	min-height: 100px;
+}
+
+.sub-heading {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	text-align: center;
+	color: var(--silver-metallic);
+	padding: 0 5rem;
+}
+.column-left {
+	min-height: 750px;
+	background-image: url("images/about-section.jpg");
+	background-position: 50% 50%;
+	background-size: auto, cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll, scroll;
+	object-fit: cover;
+	-o-object-fit: cover;
+}
+
+.column-right .section-title {
+	margin-top: 80px;
+	padding: 5rem 2rem 0 5rem;
+	font-size: 2.8rem;
+	color: var(--silver-metallic);
+	font-weight: 500;
+}
+.paragraph {
+	margin-top: 15px;
+	padding: 1rem 5rem 1rem 5rem;
+	font-size: 1rem;
+	color: var(--silver-metallic);
+	line-height: 1.4;
+	text-align: justify;
+}
+
+.services-right {
+	min-height: 750px;
+	background-image: url("images/services-section.jpg");
+	background-position: 50% 50%;
+	background-size: auto, cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll, scroll;
+	object-fit: cover;
+	-o-object-fit: cover;
+}
+
+.service-title {
+	margin-top: 20px;
+	padding: 5rem 2rem 0 5rem;
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+
+.service-title-1,
+.service-title-2 {
+	padding: 1rem 2rem 1rem 5rem;
+	font-size: 1.8rem;
+}
+
+.service-paragraph-1,
+.service-paragraph-2 {
+	margin-top: 15px;
+	padding: 0 5rem 1rem 5rem;
+	font-size: 1rem;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+.fas {
+	font-size: 4rem;
+	color: var(--cinnabar);
+}
+
+.fa-mountain,
+.fa-hiking {
+	padding: 3rem 2rem 1rem 5rem;
 }
