@@ -137,7 +137,7 @@ body {
 	background-color: var(--cinnabar);
 	color: #fff;
 	border: none;
-	border-radius: 10px;
+	border-radius: .25rem;
 	padding: 0.5rem 1rem;
 	font-size: 1.2rem;
 }
@@ -236,4 +236,57 @@ body {
 .fa-mountain,
 .fa-hiking {
 	padding: 3rem 2rem 1rem 5rem;
+}
+
+.newsletter-wrapper {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(rgba(27, 47, 51, 0.9))
+	);
+	background-image: linear-gradient(
+			180deg,
+			rgba(27, 47, 51, 0.55),
+			rgba(27, 47, 51, 0.74)
+		),
+		url("images/newsletter-background.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: auto;
+	height: 300px;
+	padding: 55px;
+}
+
+.form-control {
+	border: none;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+	outline: 0px !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+
+.fab {
+	font-size: 2rem;
+	color: var(--morning-blue);
+}
+
+.fab:hover {
+	cursor: pointer;
+	color: #fff;
 }
