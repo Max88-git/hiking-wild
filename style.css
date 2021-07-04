@@ -228,14 +228,11 @@ body {
 	text-align: justify;
 }
 
-.fas {
-	font-size: 4rem;
-	color: var(--cinnabar);
-}
-
 .fa-mountain,
 .fa-hiking {
 	padding: 3rem 2rem 1rem 5rem;
+	font-size: 4rem;
+	color: var(--cinnabar);
 }
 
 .newsletter-wrapper {
@@ -289,4 +286,12 @@ label:focus,
 .fab:hover {
 	cursor: pointer;
 	color: #fff;
+}
+
+.footer-bg {
+	background-color: var(--outer-space);
+}
+
+.footer-title {
+	color: var(--cinnabar);
 }
